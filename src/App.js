@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import HeroSection from './components/HeroSection';
+import YouTubeFeed from './Components/YoutubeFeed';
+import TwitterFeed from './Components/TwitterFeed';
+import GoogleNewsFeed from './Components/GoogleNewsFeed';
+import './App.css'; // Create this CSS file for global styling
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroSection />
+      <YouTubeFeed />
+      <TwitterFeed />
+      <GoogleNewsFeed />
     </div>
   );
-}
+};
 
 export default App;
